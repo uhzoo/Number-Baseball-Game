@@ -11,6 +11,9 @@ Rules
 
 example)
 number selected: [1 3 5]
+
 guessed number: [1 2 3], 1 is Strike, 2 is Out, 3 is Ball. 1 Out 1 Ball 1 Strike.
+
 guessed number: [5 3 1], 5 is Ball, 3 is Strike, 1 is Ball. 2 Ball 1 Strike.
+
 guessed number: [9 8 7] Would be 3 Out.
