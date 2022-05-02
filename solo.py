@@ -5,14 +5,23 @@ pitcher = input("Welcome! Who is the pitcher? ").capitalize()
 computer_number = []
 player_guess = []
 
-while len(computer_number) < 3:  # recommended number is 3 or 4
-    num = r.randint(0, 9)  # range 0 ~ 9, also can be setted by 1 ~ 9
-    if num not in computer_number:
-        computer_number.append(num)
-    round = 0
 
-# print(computer_number)
+def computer_random_number(num):  # recommended num is 3 or 4
+    while len(computer_number) < num:
+        number = r.randint(0, 9)  # range 0 ~ 9, also can be setted by 1 ~ 9
+        if number not in computer_number:
+            computer_number.append(number)
+
+
+try:
+    computer_random_number(
+        int(input("Difficulty Level, Recommended Level is 3 or 4: ")))
+except:
+    print("You Can Only Input Number")
+
+print(computer_number)
 print("-" * 50)
+round = 0
 
 while player_guess != computer_number:
     round += 1
